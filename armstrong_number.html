@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arm Strong</title>
+</head>
+<body>
+    <script>
+        let number = 153;
+        let temp = number.toString();
+        let numDigits = temp.length;
+        let sum = 0;
+
+    for (let i = 0; i < numDigits; i++) {
+        sum += Math.pow(parseInt(temp[i]), numDigits);
+    }
+
+    if (sum == number) {
+        document.write("Armstrong number");
+    } else {
+        document.write("Not an Armstrong number");
+    }
+
+</script>
+</body>
+</html>
